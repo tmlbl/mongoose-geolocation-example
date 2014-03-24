@@ -1,19 +1,19 @@
 {
-  "name": "nodeboi",
-  "version": "0.0.0",
-  "description": "A bare-bones node boilerplate",
+  "name": "mongoose-geolocation-example",
+  "version": "0.0.1",
+  "description": "Nearby search example with MongoDB",
   "main": "server.js",
   "scripts": {
     "test": "nodemon server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/tmlbl/nodeboi.git"
+    "url": "git://github.com/tmlbl/mongoose-geolocation-example.git"
   },
   "author": "Tim Lebel",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tmlbl/nodeboi/issues"
+    "url": "https://github.com/tmlbl/mongoose-geolocation-example/issues"
   },
   "dependencies": {
     "express": "~3.4.8",
