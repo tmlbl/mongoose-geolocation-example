@@ -1,4 +1,8 @@
-nodeboi
+Mongoose Geolocation Example
 =======
 
-A bare-bones node boilerplate! eh?!
+You know the drill.
+
+`npm install`
+
+`node server.js`
