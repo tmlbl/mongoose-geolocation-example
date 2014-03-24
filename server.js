@@ -8,7 +8,7 @@ app.configure(function () {
   app.set('view engine', 'jade');
   app.set('views', __dirname + '/app/views');
   app.use(express.bodyParser());
-  app.use('/public', express.static(__dirname + 'public'));
+  app.use('/public', express.static(__dirname + '/public'));
 });
 
 /* Index controller */
