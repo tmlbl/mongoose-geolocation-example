@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GeoMessage</title>
+  <link rel="stylesheet" href="public/main.css">
+</head>
+<body>
+  <h1>GeoMessage</h1>
+  <h3>The geolocation-based message board</h3>
+  <h3>Post a message to see messages near you!</h3>
+  <form action="/" method="POST">
+    <div class="form-group">
+      <label for="msg">Message:</label>
+      <textarea name="msg" id="msgBox" cols="30" rows="10"></textarea> 
+    </div>
+    <div>
+      <label for="lon">Longitude:</label>
+      <input type="text" name="lon" id="lon" class="input-large search-query">
+    </div>
+    <div>  
+      <label for="lat">Latitude:</label>
+      <input type="text" name="lat" id="lat" class="input-large search-query">
+    </div>
+    <div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </form>
+  <script src="public/locate.js"></script>
+</body>
+</html>

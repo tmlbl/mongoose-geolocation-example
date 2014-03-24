@@ -1,3 +1,8 @@
+if (navigator.geolocation) {
+  navigator.geolocation.getCurrentPosition(success, error);
+} else {
+  alert('Your browser does not support geolocation.');
+}
 function success (position) {
   console.log(position);
   var lat = document.getElementById('lat'),
@@ -5,13 +10,6 @@ function success (position) {
   lat.value = position.coords.latitude;
   lon.value = position.coords.longitude;
 }
-
 function error (err) {
   alert(err);
-}
-
-if (navigator.geolocation) {
-  navigator.geolocation.getCurrentPosition(success, error);
-} else {
-  alert('Your browser does not support geolocation.');
 }

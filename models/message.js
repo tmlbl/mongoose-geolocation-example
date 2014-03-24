@@ -1,8 +1,8 @@
 module.exports = function (Schema, mongoose) {
-  var PostSchema = new Schema({
+  var MessageSchema = new Schema({
     body: { type: String },
     loc: { type: { type: String }, coordinates: [ ] }
   });
-  PostSchema.index({ loc: '2dsphere' });
-  return mongoose.model('Post', PostSchema);
+  MessageSchema.index({ loc: '2dsphere' });
+  return mongoose.model('Message', MessageSchema);
 };
